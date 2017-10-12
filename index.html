@@ -1,1 +1,170 @@
-Hello
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="shortcut icon" href="https://notifme.github.io/notifme-sdk/img/favicon.ico">
+
+  <title>Notif.me, open source solutions for notifications.</title>
+  <meta name="description" content="Notif.me, a set of open source solutions to send all kinds of notifications (email, SMS, push, webpush, slack...) and help you save time integrating them.">
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/frameworks-77c3b874f32e71b14cded5a120f42f5c7288fa52e0a37f2d5919fbd8bcfca63c.css" integrity="sha256-d8O4dPMucbFM3tWhIPQvXHKI+lLgo38tWRn72Lz8pjw=" media="all" rel="stylesheet" />
+  <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github-6ebe72f92d204144cdef3a835e71687c40074733c90b94f104db80cdf5754533.css" integrity="sha256-br5y+S0gQUTN7zqDXnFofEAHRzPJC5TxBNuAzfV1RTM=" media="all" rel="stylesheet" />
+  <style>
+    body {
+      min-width: 0;
+      padding: 2% 6%;
+    }
+
+    ::selection {
+      background-color: rgba(8, 172, 105, 0.7);
+      color: #fff;
+    }
+
+    h1 {
+      font-family: 'Raleway', sans-serif;
+      text-align: center;
+      margin: 10% 10% 12%;
+      padding: 20px;
+      color: #fff;
+      background: rgb(8, 172, 105);
+      border-radius: 10px;
+    }
+
+    article {
+      position: relative;
+      float: left;
+      width: 48%;
+      margin: 0 auto 30px;
+      padding: 30px;
+      border: 2px solid #aaa;
+      border-radius: 5px;
+    }
+
+    article+article {
+      margin-left: 4%;
+    }
+
+    article .ribbon {
+      position: absolute;
+      top: 0;
+      right: 0;
+      border: 0;
+      border-radius: 5px;
+      max-width: 120px;
+    }
+
+    @media (min-width: 1300px) {
+      article .logo {
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 1100px) {
+      article .logo {
+        width: 70%;
+      }
+      article .ribbon {
+        width: 30%;
+      }
+    }
+
+    @media (max-width: 1000px) {
+      article {
+        float: none;
+        width: 100%;
+      }
+      article+article {
+        margin-left: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Notif.me, a set of open source solutions to send better notifications</h1>
+  <article class="markdown-body entry-content" itemprop="text" style="border-color: #08ac69;">
+    <a href="https://github.com/notifme/notifme-sdk">
+      <img class="ribbon" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png">
+    </a>
+    <p class="logo">
+      <img alt="Notif.me" src="https://camo.githubusercontent.com/1908277165dceb6bcfe338f85b06fdbe834ad8c9/68747470733a2f2f6e6f7469666d652e6769746875622e696f2f6e6f7469666d652d73646b2f696d672f6c6f676f2e706e67" data-canonical-src="https://notifme.github.io/notifme-sdk/img/logo.png"
+        style="max-width:100%;">
+    </p>
+    <p>
+      A Node.js library to send all kinds of transactional notifications.
+    </p>
+    <p>
+      <a href="https://www.npmjs.com/package/notifme-sdk"><img alt="npm-status" src="https://camo.githubusercontent.com/f4ae2e918299730f46f1c24be73582eb37aeb58e/68747470733a2f2f696d672e736869656c64732e696f2f6e706d2f762f6e6f7469666d652d73646b2e7376673f7374796c653d666c6174" data-canonical-src="https://img.shields.io/npm/v/notifme-sdk.svg?style=flat" style="max-width:100%;"></a>
+      <a href="https://github.com/notifme/notifme-sdk/blob/master/LICENSE"><img alt="license" src="https://camo.githubusercontent.com/d2db02b966169f67c346ccd253a63f61077ea86a/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6c6963656e73652d4d49545f4c6963656e73652d626c75652e7376673f7374796c653d666c6174" data-canonical-src="https://img.shields.io/badge/license-MIT_License-blue.svg?style=flat" style="max-width:100%;"></a>
+      <a href="https://github.com/notifme/notifme-sdk"><img alt="github-stars" src="https://img.shields.io/github/stars/notifme/notifme-sdk.svg?style=social&label=Stars" /></a>
+      <a href="https://slackin-notifme.now.sh"><img alt="slack" src="https://camo.githubusercontent.com/ce0f51c4697554565c472468d7dd4b4220384718/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f536c61636b2d4a6f696e5f7573212d6530313536332e737667" data-canonical-src="https://img.shields.io/badge/Slack-Join_us!-e01563.svg" style="max-width:100%;"></a>
+    </p>
+    <h2 id="features"><a id="user-content-features" class="anchor" href="#features" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Features</h2>
+    <ul>
+      <li>
+        <p><strong>Easy channel integration</strong> — Want to start sending <code>emails</code> | <code>SMS</code> | <code>pushes</code> | <code>webpushes</code>? Do so in no time!</p>
+      </li>
+      <li>
+        <p><strong>Unique documentation</strong> — Don't look everywhere for the parameters you need to pass, just do it once. <strong>Switching provider becomes a no-brainer</strong>.</p>
+      </li>
+      <li>
+        <p><strong>Multiple providers strategies</strong> — Want to use more than one provider? Use <code>fallback</code> and <code>round-robin</code> strategies out of the box.</p>
+      </li>
+      <li>
+        <p><strong>Tools for local testing</strong> — Run a catcher locally to intercept all your notifications and display them in a web interface.</p>
+      </li>
+    </ul>
+  </article>
+  <article class="markdown-body entry-content" itemprop="text" style="border-color: #17a2b8;">
+    <a href="https://github.com/notifme/notifme-history">
+      <img class="ribbon" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png">
+    </a>
+    <p class="logo">
+      <a href="https://camo.githubusercontent.com/69a534758929b4ea8f6901392694b5be97590f2c/68747470733a2f2f6e6f7469666d652e6769746875622e696f2f6e6f7469666d652d686973746f72792f696d672f6c6f676f2e706e67" target="_blank"><img alt="Notif.me History" src="https://camo.githubusercontent.com/69a534758929b4ea8f6901392694b5be97590f2c/68747470733a2f2f6e6f7469666d652e6769746875622e696f2f6e6f7469666d652d686973746f72792f696d672f6c6f676f2e706e67" data-canonical-src="https://notifme.github.io/notifme-history/img/logo.png" style="max-width:100%;"></a>
+    </p>
+    <p>
+      A pretty history of the conversations with your users.
+    </p>
+    <p>
+      <a href="https://david-dm.org/notifme/notifme-history"><img alt="dependencies" src="https://camo.githubusercontent.com/923aa922c748b77e43b1d36a1a9b2120edbcc984/68747470733a2f2f64617669642d646d2e6f72672f6e6f7469666d652f6e6f7469666d652d686973746f72792e737667" data-canonical-src="https://david-dm.org/notifme/notifme-history.svg" style="max-width:100%;"></a>
+      <a href="https://github.com/notifme/notifme-history/blob/master/LICENSE"><img alt="license" src="https://camo.githubusercontent.com/d2db02b966169f67c346ccd253a63f61077ea86a/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6c6963656e73652d4d49545f4c6963656e73652d626c75652e7376673f7374796c653d666c6174" data-canonical-src="https://img.shields.io/badge/license-MIT_License-blue.svg?style=flat" style="max-width:100%;"></a>
+      <a href="https://github.com/notifme/notifme-history"><img alt="github-stars" src="https://img.shields.io/github/stars/notifme/notifme-history.svg?style=social&label=Stars" /></a>
+      <a href="https://slackin-notifme.now.sh"><img alt="license" src="https://camo.githubusercontent.com/7af793c9cad231cb449394d65a57d66fced11b1f/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f536c61636b2d4a6f696e5f7573212d6530313536332e7376673f7374796c653d666c6174" data-canonical-src="https://img.shields.io/badge/Slack-Join_us!-e01563.svg?style=flat" style="max-width:100%;"></a>
+    </p>
+    <h2><a href="#features" aria-hidden="true" class="anchor" id="user-content-features"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Features</h2>
+    <ul>
+      <li>
+        <p><strong>Pretty history</strong> — Display all the conversations with your users, along with events associated with the notifications (no more "Did user X received the Y SMS?" from the client service team).</p>
+      </li>
+      <li>
+        <p><strong>Configure data retention</strong> — Decide until when each notification must be kept and set a capping on your MongoDB database.</p>
+      </li>
+      <li>
+        <p><strong>Real-time data</strong> — The displayed notifications are automatically refreshed when they change or when new ones are created (with the help of <a href="https://www.meteor.com/">Meteor</a>).</p>
+      </li>
+      <li>
+        <p><strong>Search by user info</strong> — All user fields are indexed and you can make <a href="https://docs.mongodb.com/manual/reference/operator/query/text/#search-field">complex searches</a> with negations and phrases.</p>
+      </li>
+      <li>
+        <p><strong>User management</strong> — An administrator can easily give or revoke access to any user.</p>
+      </li>
+      <li>
+        <p><strong>Simple API</strong> — The model of the extra data (users, notification details) you send to the API is up to you.</p>
+      </li>
+    </ul>
+  </article>
+  <script>
+    function matchHeight() {
+      var width = document.getElementsByTagName('body')[0].offsetWidth
+      var articles = document.getElementsByTagName('article')
+      articles[0].style.height = width >= 1000 ? articles[1].offsetHeight + 'px' : ''
+    }
+    window.onload = matchHeight
+    window.onresize = matchHeight
+  </script>
+</body>
+
+</html>
